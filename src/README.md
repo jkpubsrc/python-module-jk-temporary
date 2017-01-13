@@ -23,7 +23,9 @@ This module provides the following functions:
 # 										This method just creates the path.
 #
 def createRandomFilePath(baseDirPath = "/tmp", prefix = 'tmp_', randomNameLength = 32, postfix = '')
+```
 
+```python
 #
 # Create a unique new temporary directory.
 #
@@ -36,7 +38,9 @@ def createRandomFilePath(baseDirPath = "/tmp", prefix = 'tmp_', randomNameLength
 # @return		string					Returns a unique path to a directory that just has been created.
 #
 def createTempDir(baseDirPath = "/tmp", prefix = 'tmp_', randomNameLength = 32, postfix = '', dirMode = 0o700)
+```
 
+```python
 #
 # Create a unique new temporary file ready for later writing.
 # Please note that temporary file names are generated using a RNG. That implies that if you do not write
@@ -54,7 +58,9 @@ def createTempDir(baseDirPath = "/tmp", prefix = 'tmp_', randomNameLength = 32, 
 # @return		string					Returns  the unique path to a file that just has been created.
 #
 def createTempFilePath(baseDirPath = "/tmp", prefix = 'tmp_', randomNameLength = 32, postfix = '', fileMode = 0o600)
+```
 
+```python
 #
 # Create a unique new temporary file ready for later writing.
 #
@@ -67,7 +73,9 @@ def createTempFilePath(baseDirPath = "/tmp", prefix = 'tmp_', randomNameLength =
 # @return		string					Returns  the unique path to a file that just has been created.
 #
 def createTempFile(baseDirPath = "/tmp", prefix = 'tmp_', randomNameLength = 32, postfix = '', fileMode = 0o600)
+```
 
+```python
 #
 # Create a unique new temporary file ready for immediate writing.
 #
@@ -82,7 +90,9 @@ def createTempFile(baseDirPath = "/tmp", prefix = 'tmp_', randomNameLength = 32,
 #										- the open file handle
 #
 def createTempFileUTF8(baseDirPath = "/tmp", prefix = 'tmp_', randomNameLength = 32, postfix = '', fileMode = 0o600)
+```
 
+```python
 #
 # Create a unique new temporary file ready for immediate writing.
 #
@@ -122,12 +132,16 @@ This module provides the class ``TempDir`` that contains the following methods:
 def __init__(self,
 	baseDirPath = '/tmp', namePrefix = 'tmp-', namePostfix = None, defaultExtension = None,
 	randomNameLength = 32, defaultAccessModeFiles = 0o600, defaultAccessModeDirectories = 0o700)
+```
 
+```python
 #
 # Remove all files in the temporary directory. Please note that temporary directories remain untouched!
 #
 def clear(self)
+```
 
+```python
 #
 # Create a new file path.
 # Please note that temporary file names are generated using a RNG. That implies that if you do not write
@@ -141,7 +155,9 @@ def clear(self)
 # @return		string					Returns the full qualified file path that furtheron can be used for writing.
 #
 def createFilePath(self, extension = None)
+```
 
+```python
 #
 # Create a new directory path.
 # Please note that temporary directory names are generated using a RNG. That implies that if you do not create
@@ -153,7 +169,9 @@ def createFilePath(self, extension = None)
 # @return		string					Returns the full qualified file path that furtheron can be used for writing.
 #
 def createDirPath(self)
+```
 
+```python
 #
 # Create a new temporary file.
 #
@@ -163,7 +181,9 @@ def createDirPath(self)
 # @return		string					Returns  the unique path to a file that just has been created.
 #
 def createFile(self, extension = None, accessMode = None)
+```
 
+```python
 #
 # Create a new temporary file.
 #
@@ -173,7 +193,9 @@ def createFile(self, extension = None, accessMode = None)
 # @return		(string, handle)		Returns a tuple: The full qualified file path and the file handle that can be used for writing.
 #
 def createFileBinary(self, extension = None, accessMode = None)
+```
 
+```python
 #
 # Create a new temporary file.
 #
