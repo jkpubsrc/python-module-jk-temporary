@@ -2,7 +2,7 @@
 
 
 def readme():
-	with open('README.rst') as f:
+	with open('README.txt') as f:
 		return f.read()
 
 
