@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+jk_temporary/__init__.py
+jk_temporary/temputils.py
+jk_temporary.egg-info/PKG-INFO
+jk_temporary.egg-info/SOURCES.txt
+jk_temporary.egg-info/dependency_links.txt
+jk_temporary.egg-info/not-zip-safe
+jk_temporary.egg-info/top_level.txt
