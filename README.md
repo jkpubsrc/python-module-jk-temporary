@@ -6,6 +6,11 @@ Introduction
 
 This python module is a collection of utility functions and classes to manage temporary data.
 
+Information about this module can be found here:
+
+* [github.org](https://github.com/jkpubsrc/python-module-jk-temporary)
+* [pypi.python.org](https://pypi.python.org/pypi?name=jk_temporary)
+
 The functions this module provides
 ----------------------------------
 
@@ -219,6 +224,8 @@ for comments, collaboration requests, suggestions for improvement or reporting b
 License
 -------
 
-Apache Software License 2.0
+This software is provided under the following license:
+
+* Apache Software License 2.0
 
 
