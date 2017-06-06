@@ -9,7 +9,7 @@ This python module is a collection of utility functions and classes to manage te
 Information about this module can be found here:
 
 * [github.org](https://github.com/jkpubsrc/python-module-jk-temporary)
-* [pypi.python.org](https://pypi.python.org/pypi?name=jk_temporary)
+* [pypi.python.org](https://pypi.python.org/pypi/jk_temporary)
 
 The functions this module provides
 ----------------------------------
@@ -127,7 +127,7 @@ This module provides the class ``TempDir`` that contains the following methods:
 # @param		string	namePrefix					A prefix to prepend the random file name part. The default is: "<c>tmp-</c>".
 # @param		string	namePostfix					A postfix to append the random file name part. The default is: <c>None</c>.
 # @param		string	defaultExtension			A file extension to append the random file name part
-#													after the postfix). This applies to file names only. the default is: <c>None</c>. 
+#													after the postfix). This applies to file names only. the default is: <c>None</c>.
 # @param		int	randomNameLength				The length in characters of the random file name part to create.
 # @param		int	defaultAccessModeFiles			The UNIX/Linux mode files should have on creation. This is 0600 by default to
 #													ensure that other users can not read or write to the new file.
