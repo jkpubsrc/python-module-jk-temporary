@@ -7,16 +7,17 @@ def readme():
 
 
 setup(name='jk_temporary',
-	version='0.2017.6.6',
+	version='0.2017.8.28',
 	description='Collection of utility functions and classes to manage temporary data.',
 	author='Jürgen Knauth',
 	author_email='pubsrc@binary-overflow.de',
 	license='Apache 2.0',
 	url='https://github.com/jkpubsrc/python-module-jk-temporary',
-	download_url='https://github.com/jkpubsrc/python-module-jk-temporary/tarball/0.2017.6.6',
+	download_url='https://github.com/jkpubsrc/python-module-jk-temporary/tarball/0.2017.8.28',
 	keywords=['temp', 'temporary', 'tempfiles'],
 	packages=['jk_temporary'],
 	install_requires=[
+		'sh'
 	],
 	include_package_data=True,
 	classifiers=[
