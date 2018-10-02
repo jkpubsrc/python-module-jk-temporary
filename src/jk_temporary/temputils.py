@@ -33,6 +33,7 @@ RESERVOIR = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 def createRandomFilePath(baseDirPath = "/tmp", prefix = 'tmp_', randomNameLength = 32, postfix = ''):
 	s = ''.join(random.choice(RESERVOIR) for _ in range(randomNameLength))
 	return os.path.join(baseDirPath, prefix + s + postfix)
+#
 
 
 
@@ -55,6 +56,7 @@ def createTempDir(baseDirPath = "/tmp", prefix = 'tmp_', randomNameLength = 32, 
 		if not os.path.exists(path):
 			os.mkdir(path, dirMode)
 			return path
+#
 
 
 
@@ -80,6 +82,7 @@ def createTempFilePath(baseDirPath = "/tmp", prefix = 'tmp_', randomNameLength =
 		path = createRandomFilePath(baseDirPath, prefix = prefix, randomNameLength = randomNameLength, postfix = postfix)
 		if not os.path.exists(path):
 			return path
+#
 
 
 
@@ -102,6 +105,7 @@ def createTempFile(baseDirPath = "/tmp", prefix = 'tmp_', randomNameLength = 32,
 			codecs.open(path, 'w', 'utf-8').close()
 			os.chmod(path, fileMode)
 			return path
+#
 
 
 
@@ -126,6 +130,7 @@ def createTempFileUTF8(baseDirPath = "/tmp", prefix = 'tmp_', randomNameLength =
 			fd = codecs.open(path, 'w', 'utf-8')
 			os.chmod(path, fileMode)
 			return (path, fd)
+#
 
 
 
@@ -150,6 +155,7 @@ def createTempFileBinary(baseDirPath = "/tmp", prefix = 'tmp_', randomNameLength
 		if not os.path.exists(path):
 			fd = open(path, 'wb', fileMode)
 			return (path, fd)
+#
 
 
 
@@ -172,7 +178,7 @@ class TempDir(object):
 	# @param		string	namePrefix					A prefix to prepend the random file name part. The default is: "<c>tmp-</c>".
 	# @param		string	namePostfix					A postfix to append the random file name part. The default is: <c>None</c>.
 	# @param		string	defaultExtension			A file extension to append the random file name part
-	#													after the postfix). This applies to file names only. the default is: <c>None</c>. 
+	#													after the postfix). This applies to file names only. the default is: <c>None</c>.
 	# @param		int	randomNameLength				The length in characters of the random file name part to create.
 	# @param		int	defaultAccessModeFiles			The UNIX/Linux mode files should have on creation. This is 0600 by default to
 	#													ensure that other users can not read or write to the new file.
@@ -197,6 +203,7 @@ class TempDir(object):
 		if defaultExtension is None:
 			defaultExtension = ''
 		self.__defaultExtension = defaultExtension
+	#
 
 
 
@@ -208,6 +215,7 @@ class TempDir(object):
 			filePath = os.path.join(self.__dirPath, fileName)
 			if os.path.isfile(filePath):
 				os.unlink(filePath)
+	#
 
 
 
@@ -238,6 +246,7 @@ class TempDir(object):
 			tmpFilePath = os.path.join(self.__dirPath, self.__namePrefix + random_chars + self.__namePostfix + extension)
 			if not os.path.exists(tmpFilePath):
 				return tmpFilePath
+	#
 
 
 
@@ -260,6 +269,7 @@ class TempDir(object):
 			tmpFilePath = os.path.join(self.__dirPath, self.__namePrefix + random_chars + self.__namePostfix)
 			if not os.path.exists(tmpFilePath):
 				return tmpFilePath
+	#
 
 
 
@@ -278,6 +288,7 @@ class TempDir(object):
 		open(tmpFilePath, 'wb', accessMode).close()
 		os.chmod(tmpFilePath, accessMode)
 		return tmpFilePath
+	#
 
 
 
@@ -295,6 +306,7 @@ class TempDir(object):
 		tmpFilePath = self.createFilePath(extension)
 		fd = open(tmpFilePath, 'wb', accessMode)
 		return (tmpFilePath, fd)
+	#
 
 
 
@@ -314,8 +326,11 @@ class TempDir(object):
 		if accessMode != None:
 			os.chmod(tmpFilePath, accessMode)
 		return (tmpFilePath, fd)
+	#
 
 
+
+#
 
 
 
