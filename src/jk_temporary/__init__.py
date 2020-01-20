@@ -8,5 +8,4 @@ from .temputils import createRandomFilePath, createTempDir, createTempFilePath, 
 
 
 
-__version__ = "0.2019.12.26"
-
+__version__ = "0.2020.1.20"

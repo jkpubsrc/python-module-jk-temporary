@@ -1,7 +1,7 @@
 {
 	"language": "python3",
 	"name": "jk_temporary",
-	"version": "0.2019.12.26",
+	"version": "0.2020.1.20",
 	"meta": {
 		"description": "Collection of utility functions and classes to manage temporary data.",
 		"keywords": [
