@@ -1,0 +1,51 @@
+{
+	"language": "python3",
+	"name": "jk_temporary",
+	"version": "0.2019.12.26",
+	"meta": {
+		"description": "Collection of utility functions and classes to manage temporary data.",
+		"keywords": [
+			"temp",
+			"tempfiles",
+			"temporary"
+		],
+		"license": "Apache 2.0",
+		"development_status": "stable",
+		"authors": [
+			{
+				"name": "Jürgen Knauth",
+				"email": "pubsrc@binary-overflow.de"
+			}
+		],
+		"wiki": {
+			"page": "DevDocs:jk_temporary"
+		}
+	},
+	"repositories": [
+		{
+			"type": "github",
+			"user": "jkpubsrc",
+			"project": "python-module-jk-temporary",
+			"devon_publish": false
+		},
+		{
+			"type": "pypy",
+			"project": "jk_temporary",
+			"devon_publish": false
+		}
+	],
+	"source": {
+		"packages": [
+			"jk_temporary"
+		],
+		"extra_data_files": [
+		]
+	},
+	"requirements": {
+		"python_packages": [
+		],
+		"python_packages_dev": [
+		]
+	}
+}
+
