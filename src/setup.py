@@ -21,9 +21,9 @@ setup(
 	classifiers = [
 		"Development Status :: 5 - Production/Stable",
 		"License :: OSI Approved :: Apache Software License",
+		"Programming Language :: Python :: 3",
 	],
 	description = "Collection of utility functions and classes to manage temporary data.",
-	download_url = "https://github.com/jkpubsrc/python-module-jk-temporary/tarball/0.2020.1.20",
 	include_package_data = False,
 	install_requires = [
 	],
@@ -32,13 +32,12 @@ setup(
 		"tempfiles",
 		"temporary",
 	],
-	license = "Apache 2.0",
+	license = "Apache2",
 	name = "jk_temporary",
 	packages = [
 		"jk_temporary",
 	],
-	url = "https://github.com/jkpubsrc/python-module-jk-temporary",
-	version = "0.2020.1.20",
+	version = "0.2021.12.6",
 	zip_safe = False,
 	long_description = readme(),
 	long_description_content_type="text/markdown",

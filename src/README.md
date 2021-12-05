@@ -1,4 +1,4 @@
-﻿jk_temporary
+jk_temporary
 ============
 
 Introduction

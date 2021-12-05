@@ -1,11 +1,9 @@
-﻿#!/usr/bin/python3
+﻿
+
+
+__version__ = "0.2021.12.6"
 
 
 
-
-from .temputils import createRandomFilePath, createTempDir, createTempFilePath, createTempFile, createTempFileBinary, createTempFileUTF8, TempDir
-
-
-
-
-__version__ = "0.2020.1.20"
+from .temputils import createRandomFilePath, createTempDir, createTempFilePath, createTempFile, createTempFileBinary, createTempFileUTF8
+from .TempDir import TempDir
