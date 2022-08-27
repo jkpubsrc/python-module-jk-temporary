@@ -8,7 +8,7 @@ This python module is a collection of utility functions and classes to manage te
 
 Information about this module can be found here:
 
-* [github.org](https://github.com/jkpubsrc/python-module-jk-temporary)
+* [github.com](https://github.com/jkpubsrc/python-module-jk-temporary)
 * [pypi.python.org](https://pypi.python.org/pypi/jk_temporary)
 
 The functions this module provides
